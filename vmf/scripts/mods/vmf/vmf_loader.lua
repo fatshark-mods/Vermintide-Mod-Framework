@@ -82,6 +82,7 @@ function vmf_mod_object:on_unload()
   print("VMF:ON_UNLOAD()")
   vmf.save_chat_history()
   vmf.save_unsaved_settings_to_file()
+  vmf.network_unload()
 end
 
 
